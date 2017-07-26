@@ -26,6 +26,8 @@ public class FruitAdapter extends ArrayAdapter<Fruit> {
     public View getView(int i, View convertView, ViewGroup viewGroup) {
         Fruit fruit=getItem(i);
         View view;
+
+        //加个备注
         ViewHolder viewHolder;
         if(null==convertView) {
             view= LayoutInflater.from(getContext()).inflate(resourceId,viewGroup,false);
