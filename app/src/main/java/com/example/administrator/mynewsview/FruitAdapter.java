@@ -36,6 +36,7 @@ public class FruitAdapter extends ArrayAdapter<Fruit> {
             viewHolder.name = (TextView) view.findViewById(R.id.fruit_name);
             view.setTag(viewHolder);//讲viewHolder存储在view中
         }else {
+
             view=convertView;
             viewHolder=(ViewHolder)view.getTag();//重新获取viewHolder
         }
