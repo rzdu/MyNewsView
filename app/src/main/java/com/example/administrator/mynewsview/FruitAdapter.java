@@ -26,6 +26,7 @@ public class FruitAdapter extends ArrayAdapter<Fruit> {
     public View getView(int i, View convertView, ViewGroup viewGroup) {
         Fruit fruit=getItem(i);
         View view;
+        //nothing
         ViewHolder viewHolder;
         if(null==convertView) {
             view= LayoutInflater.from(getContext()).inflate(resourceId,viewGroup,false);
@@ -34,6 +35,7 @@ public class FruitAdapter extends ArrayAdapter<Fruit> {
             viewHolder.name = (TextView) view.findViewById(R.id.fruit_name);
             view.setTag(viewHolder);//讲viewHolder存储在view中
         }else {
+
             view=convertView;
             viewHolder=(ViewHolder)view.getTag();//重新获取viewHolder
         }
